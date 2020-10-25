@@ -7,7 +7,7 @@ import (
 
 func main() {
 	pulumi.Run(func(ctx *pulumi.Context) error {
-		zone, err := cloudflare.NewZone(ctx, "frezbo", &cloudflare.ZoneArgs{
+		zone, err := cloudflare.NewZone(ctx, "frezbo.dev", &cloudflare.ZoneArgs{
 			Plan: pulumi.String("free"),
 			Type: pulumi.String("full"),
 			Zone: pulumi.String("frezbo.dev"),
